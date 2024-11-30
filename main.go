@@ -9,7 +9,7 @@ import (
 	_ "github.com/ncruces/go-sqlite3/embed"
 )
 
-func main() {
+func mains() {
 	cfg := &gollamaConfig{}
 
 	cfg.ParseCLIArgs()
@@ -48,7 +48,6 @@ func main() {
 		cfg.generate()
 		return
 	}
-
 	// the default case is to start the TUI
 	tui()
 }
